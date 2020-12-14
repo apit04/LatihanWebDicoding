@@ -1,6 +1,33 @@
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Apit Game Kabylake</title>
 	<link rel="stylesheet" href="styles/style.css">
+
+    <script type='text/javascript'src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+     <!--script animasi-->
+    <script type='text/javascript'>
+    function ngajaranSlide(slideContainer, duration)
+    {
+        var currentSlide = $('img:nth-child(1)', slideContainer);
+        $(currentSlide)
+        .css({
+            opacity: 0 // transparan
+        })
+        .appendTo(slideContainer)
+        .animate({
+            opacity: 1
+        }, 'normal', function(){
+            setTimeout(function(){
+                ngajaranSlide(slideContainer, duration);
+            }, duration);
+        })
+    }
+    $(function(){
+        var duration = 1000;       
+        var slideContainer = $('#slideshow');
+        ngajaranSlide(slideContainer, duration);
+    });
+    </script>
 </head>
 <body>
  <header>
@@ -12,17 +39,18 @@
 	<ul>
 		<li><a href="#">Beranda</a></li>
 		<li><a href="#re2remake">Review</a></li>
-		<li><a href="#kontak">Kontak</a></li>
+		<li><a href="#tentangku">Kontak</a></li>
 	</ul>
   </nav>
  </header>
 
+
 <main>
+
 <div class="content">
 <article class="card" >	
 <h3 id="revillage">RESIDENT EVIL VILLAGE</h3>
-
-<figure id="gmbartngh" > <img src="gambar/06.jpg" class="image" alt="RESIDENT_EVIL_VILLAGE" width="500px" style="display: block; margin: auto;" >
+<figure id="gmbartngh" > <img src="gambar/06.jpg" class="image" width="500px" style="display: block; margin: auto;">	
 		<figcaption>Resident Evil 8</figcaption>	
 </figure>
 
@@ -54,16 +82,16 @@
 
 <aside>
 <article class="card">	
-	<header>
-	<h2 align="center"> Ceng Afit Afrizal</h2>
-	<p id="kor1" align="center"> Lampauilah batasanmu upgrade your skill upgrade your live !</p>
+	<header id="tentangku" class="tentangku">
+	<h2 > Ceng Afit Afrizal</h2>
+	<p id="kor1"> Lampauilah batasanmu upgrade your skill upgrade your live !</p>
 	<figure>
-		<img src="gambar/apit.jpg" width="150" height="200" class="">
+		<img src="gambar/apit.jpg" width="150" height="200" >
 		<figcaption>Aku imut</figcaption>
 	</figure>
 	</header>
 	<section>
-		<h4>Informasi tentang saya</h4>
+		<marquee><h4>Informasi tentang saya</h4></marquee>
 		<table>
 			<tr align="left">
 				<th>Fullname</th>
@@ -78,16 +106,33 @@
 			<tr align="left">
 				<th>Dicoding Email</th>
 				<td>:</td>
-				<td>cengafit.afrizal@gmail.com</td>
+				<td><font size="2">cengafit.afrizal@gmail.com</font></td>
 			</tr>
 			<tr align="left">
 				<th>Alamat</th>
 				<td>:</td>
 				<td>Sindangkasih-Ciamis</td>
 			</tr>
+			<tr align="left">
+				<th>Jurusan</th>
+				<td>:</td>
+				<td>Teknik Informatika</td>
+			</tr>
+			<tr align="left">
+				<th>Perguruan Tinngi</th>
+				<td>:</td>
+				<td>Universias Siliwangi</td>
+			</tr>
 		</table>
 	</section>
 </article>
+
+<article class="card" id="slideshow">
+    <img src="gambar/01.jpg" class="image" width="200px" style="display: block; margin: auto;">
+    <img src="gambar/06.jpg" class="image" width="200px" style="display: block; margin: auto;" >
+    <img src="gambar/05.jpg" class="image" width="200px" style="display: block; margin: auto;">
+</article>
+
 </aside>
 </main>
 <br>

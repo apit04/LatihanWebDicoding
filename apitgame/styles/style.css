@@ -1,6 +1,9 @@
 /* body {
 	font-family: sans-serif;
 } */
+header {
+   display: inline;
+}
 .jumbotron {
 	font-size: 15px;
 	padding: 40px;
@@ -11,7 +14,15 @@
 nav {
 	background-color: #012e0c;
 	padding: 5px;
+	position: sticky;
+   top: 0;
 }
+#slideshow img {
+				left: 0;
+				top: 0;
+     			text-align: center;
+     			object-position: center;
+    }
 nav a{
 	font-size: 20px;
 	font-weight: 400;
@@ -31,13 +42,18 @@ li{
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
-	padding: 30px;
+	padding: 15px;
 	margin-left: 20px;
 	margin-top: 20px;
 	margin-right: 20px	
 }
 main{
 	padding: 25px;
+	overflow: auto;
+	background-color: #7ee089;
+}
+* {
+	box-sizing: border-box;
 }
 figure {
 	display: block;
@@ -66,7 +82,7 @@ h4 {
 /*	.kor1 p#letter {
 	letter-spacing: 4px;
 }	*/ 
-.tentangku header {
+.tentangku {
 	text-align: center;
 }
 /*
@@ -74,11 +90,16 @@ h4 {
 	marks: 0 auto;
 	align-items: center;
 } */
-#content {
+.content {
 	float: left;
-	width: 75%;
+	width: 70%;
 }
 
+aside {
+	float: left;
+	width: 30%;
+	
+}
 /* div#konten {
 	background-color:  rgb(200, 200, 200);  **burlywood
 	padding: 20px 15px 
@@ -90,8 +111,8 @@ h4 {
     color: white;
 } 
 */
-.image img {
-	width: 80%;
+.image {
+	width: 100%;
 	max-height: 300px;
 	object-fit: cover;
 	object-position: center;	
@@ -100,10 +121,20 @@ h4 {
 	width: 200px;
 
 }
+article {
+	background-color: #c1fc79;
+}
 footer {
 	padding: 5px;
 	color: white;
 	background-color: #035c18;
 	text-align: center;
    font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+   .content,
+   aside {
+       width: 100%;
+       padding: 0;
+   }
 }
