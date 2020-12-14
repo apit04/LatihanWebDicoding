@@ -1,0 +1,109 @@
+/* body {
+	font-family: sans-serif;
+} */
+.jumbotron {
+	font-size: 15px;
+	padding: 40px;
+	background-color: #035c18;
+	text-align: center;
+	color: white;
+}
+nav {
+	background-color: #012e0c;
+	padding: 5px;
+}
+nav a{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: Tahoma;
+	text-decoration: none;
+	color: white
+}
+nav a:hover {
+	font-weight: bold;
+}
+li{
+	display: inline;
+	margin-left: 12px;
+	margin-right: 20px;
+	list-style-type: none;
+}
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	padding: 30px;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-right: 20px	
+}
+main{
+	padding: 25px;
+}
+figure {
+	display: block;
+	margin: auto;
+	text-align: center;
+	object-position: : center;
+	object-fit: cover;
+}
+p {
+	font-family: times new roman; 
+	text-indent: 30px;
+	padding: 
+}
+h2 {00
+	color: green; 
+}
+h3{
+	color:purple;
+	font-family: tahoma;
+}
+h4 {
+	color: #0F9915;
+	font-family: tahoma; 
+	text-shadow: 1px 2px 5px #AEB5AE;
+}
+/*	.kor1 p#letter {
+	letter-spacing: 4px;
+}	*/ 
+.tentangku header {
+	text-align: center;
+}
+/*
+.konten{
+	marks: 0 auto;
+	align-items: center;
+} */
+#content {
+	float: left;
+	width: 75%;
+}
+
+/* div#konten {
+	background-color:  rgb(200, 200, 200);  **burlywood
+	padding: 20px 15px 
+} 
+
+#konten > h3 {
+    background-color: #60d0a8; **CadetBlue; #60d0a8; 
+    padding: 15px;
+    color: white;
+} 
+*/
+.image img {
+	width: 80%;
+	max-height: 300px;
+	object-fit: cover;
+	object-position: center;	
+}
+.profile img {
+	width: 200px;
+
+}
+footer {
+	padding: 5px;
+	color: white;
+	background-color: #035c18;
+	text-align: center;
+   font-weight: bold;
+}
